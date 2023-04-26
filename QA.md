@@ -11,3 +11,13 @@ Python中的time模块和datetime模块中的time类的功能有何区别？
   * datetime：同时有时间和日期。
 
   在实际使用中，用得比较多的是datetime.datetime和datetime.timedelta。
+
+
+
+可变对象与不可变对象？
+* 可变对象是指对象的内容可以改变，例如list、dict、set等。
+  * 当可变对象的内容发生变化时，对象的id值不变，但是value值会变。
+* 不可变对象是指对象的内容不可以改变，例如int、float、bool、str、tuple等。
+  * 当不可变对象的内容发生变化时，会创建一个新的对象，对象的id值和value值都会变。
+
+Python中的所有对象都是引用类型，即变量存储的是对象的引用（地址），而不是对象本身。所以对于可变对象和不可变对象，要注意区分引用和内容的关系。
